@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.profilephoto {
+  width: 217px;
+  height: 326px;
+  border-radius: 10px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.number-1,
+.number-2,
+.number-3 {
+  border: 1px solid white;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+}
+.pic-1 {
+  grid-area: pic-1;
+}
+.pic-2 {
+  grid-area: pic-2;
+}
+.pic-3 {
+  grid-area: pic-3;
+}
+.pic-4 {
+  grid-area: pic-4;
+}
+.pic-5 {
+  grid-area: pic-5;
+}
+.pic-6 {
+  grid-area: pic-6;
+}
+.gallary {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+
+  grid-template-areas:
+    "pic-1 pic-2 pic-2"
+    "pic-3 pic-3  pic-4"
+    "pic-5 pic-6  pic-4";
+}
+@media screen and (max-width: 576px) {
+  .gallary {
+    gap: 5px;
+  }
+  img{
+    border-radius: 5px;
+  }
+}
